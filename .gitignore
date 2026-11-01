@@ -1,0 +1,42 @@
+# Local dependencies and caches
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.vite/
+.turbo/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+.aws/
+
+# Generated output and logs
+dist/
+build/
+coverage/
+logs/
+*.log
+*.tsbuildinfo
+
+# Database exports contain account data; keep migration source and fixtures
+database_export.sql
+**/database/merge_export/merge_export.sql
+*.dump
+*.backup
+
+# Local editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
